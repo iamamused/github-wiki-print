@@ -1,15 +1,114 @@
 @media print {
+	
+	/* 
+	html5doctor.com Reset Stylesheet
+	v1.6.1
+	Last Updated: 2010-09-17
+	Author: Richard Clark - http://richclarkdesign.com 
+	Twitter: @rich_clark
+	*/
+	
+	html, body, div, span, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	abbr, address, cite, code,
+	del, dfn, em, img, ins, kbd, q, samp,
+	small, strong, sub, sup, var,
+	b, i,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section, summary,
+	time, mark, audio, video {
+		margin:0;
+		padding:0;
+		border:0;
+		outline:0;
+		font-size:100%;
+		vertical-align:baseline;
+		background:transparent;
+	}
+	
+	body {
+		line-height:1;
+	}
+	
+	article,aside,details,figcaption,figure,
+	footer,header,hgroup,menu,nav,section { 
+		display:block;
+	}
+	
+	nav ul {
+		list-style:none;
+	}
+	
+	blockquote, q {
+		quotes:none;
+	}
+	
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content:'';
+		content:none;
+	}
+	
+	a {
+		margin:0;
+		padding:0;
+		font-size:100%;
+		vertical-align:baseline;
+		background:transparent;
+	}
+	
+	/* change colours to suit your needs */
+	ins {
+		background-color:#ff9;
+		color:#000;
+		text-decoration:none;
+	}
+	
+	/* change colours to suit your needs */
+	mark {
+		background-color:#ff9;
+		color:#000; 
+		font-style:italic;
+		font-weight:bold;
+	}
+	
+	del {
+		text-decoration: line-through;
+	}
+	
+	abbr[title], dfn[title] {
+		border-bottom:1px dotted;
+		cursor:help;
+	}
+	
+	table {
+		border-collapse:collapse;
+		border-spacing:0;
+	}
+	
+	/* change border colour to suit your needs */
+	hr {
+		display:block;
+		height:1px;
+		border:0;   
+		border-top:1px solid #cccccc;
+		margin:1em 0;
+		padding:0;
+	}
+	
+	input, select {
+		vertical-align:middle;
+	}
+	
+}
+
+
+@media print {
 	/* http://www.w3.org/TR/CSS2/sample.html */
 	
-	html, address,
-	blockquote,
-	body, dd, div,
-	dl, dt, fieldset, form,
-	frame, frameset,
-	h1, h2, h3, h4,
-	h5, h6, noframes,
-	ol, p, ul, center,
-	dir, hr, menu, pre   { display: block }
 	li              { display: list-item }
 	head            { display: none }
 	table           { display: table }
@@ -73,15 +172,13 @@
 	*[DIR="ltr"]    { direction: ltr; unicode-bidi: embed }
 	*[DIR="rtl"]    { direction: rtl; unicode-bidi: embed }
 	
-	
-	h1            { /* page-break-before: always */ }
-	h1, h2, h3,
-	h4, h5, h6    { page-break-after: avoid }
-	ul, ol, dl    { page-break-before: avoid }
 }
 
+/* http://www.w3.org/TR/CSS2/page.html */
 
 @media print {
+	
+	
 	#header,
 	.pagehead,
 	.site .repos ,
@@ -95,15 +192,20 @@
 		font-family: Georgia, "Times New Roman",  Times, serif;
 		font-size: 11pt;
 		line-height: 16pt;
+		margin:0; padding:0;
 		padding: 72pt;
-		padding-left: 96pt;
 	}
 	
 	h1, h2, h3,
 	h4, h5, h6 {
 		font-family: Helvetica, Arial, sans;
+		page-break-after: avoid;
 	}
 	
+	ul, ol, dl    { 
+		page-break-before: avoid 
+	}
+
 	a:link:after {
 		color:#666;
 		font-family: Helvetica, Arial, sans;
@@ -128,5 +230,25 @@
 		content: "Printed using GitHub Wiki Print by Jeffrey Sambells (http://github.com/iamamused)"
 	}
 	
+	
+	figure {
+		border:1pt solid #000;
+		padding:12pt;
+		text-align: center;
+	}
+	
+	figcaption {
+		font-style: italic;
+		color: #aaa;
+		clear:both;
+	}
+	
+	img {
+	   max-width: 400px;
+	   clear:both;
+	   display:block;
+	}
+	
+
 }
 

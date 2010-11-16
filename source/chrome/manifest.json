@@ -9,7 +9,7 @@
   "content_scripts": [
       {
         "matches" : ["http://github.com/*/*/wiki/*","https://github.com/*/*/wiki/*"],
-        "css": ["print.css"],
+        "css": ["print.css"]
       }
   ],
    "icons": { "48": "Icon-48.png" },
