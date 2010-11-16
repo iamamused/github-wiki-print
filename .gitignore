@@ -1,0 +1,13 @@
+.DS_Store
+*.crx
+*.pem
+*.safariextz
+*.xpi
+
+source/chrome/GitHubCrossLink.js
+source/chrome/Icon*
+source/firefox/chrome/content/GitHubCrossLink.js
+source/firefox/chrome/skin/Icon*
+source/safari.safariextension/GitHubCrossLink.js
+source/safari.safariextension/Icon*
+
