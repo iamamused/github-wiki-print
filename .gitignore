@@ -4,10 +4,10 @@
 *.safariextz
 *.xpi
 
-source/chrome/GitHubCrossLink.js
+source/chrome/print.css
 source/chrome/Icon*
-source/firefox/chrome/content/GitHubCrossLink.js
+source/firefox/chrome/content/print.css
 source/firefox/chrome/skin/Icon*
-source/safari.safariextension/GitHubCrossLink.js
+source/safari.safariextension/print.css
 source/safari.safariextension/Icon*
 

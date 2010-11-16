@@ -1,0 +1,17 @@
+{
+  "name": "GitHub Wiki Print",
+  "version": "1.1",
+  "description": "Make GitHub Wiki Pages Printable.",
+  "permissions": [
+    "http://github.com/",
+    "https://github.com/"
+  ],
+  "content_scripts": [
+      {
+        "matches" : ["http://github.com/*/*/wiki/*","https://github.com/*/*/wiki/*"],
+        "css": ["print.css"],
+      }
+  ],
+   "icons": { "48": "Icon-48.png" },
+   "update_url": "http://iamamused.github.com/github-cross-link/update/chrome.xml"
+}
