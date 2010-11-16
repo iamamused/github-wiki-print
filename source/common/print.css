@@ -178,6 +178,10 @@
 
 @media print {
 	
+	@page {
+		margin-top:72px;
+		margin-bottom:72px;
+	}
 	
 	#header,
 	.pagehead,
@@ -186,6 +190,9 @@
 	.content h1:first-of-type,
 	#footer,
 	.locales
+	{ display:none; }
+
+	hr, form
 	{ display:none; }
 	
 	body {
@@ -201,10 +208,22 @@
 		font-family: Helvetica, Arial, sans;
 		page-break-after: avoid;
 	}
+
+
+	h1 {
+		border-bottom: 4pt solid #ccc;
+		padding-bottom:8pt;
+	}
+
 	
 	ul, ol, dl    { 
 		page-break-before: avoid 
 	}
+	
+	blockquote {
+		font-style:italic;
+	}
+
 
 	a:link:after {
 		color:#666;
@@ -220,6 +239,10 @@
 		color: #333;
 	}
 	
+	:link, :visited {
+	   text-decoration: none;
+	}
+	
 	#guides:after {
 		display:block;
 		margin-top:12pt,
@@ -227,7 +250,7 @@
 		font-size: 10pt;
 		font-weight:bold;
 		clear:left;
-		content: "Printed using GitHub Wiki Print by Jeffrey Sambells (http://github.com/iamamused)"
+		content: "Printed using GitHub Wiki Print by Jeffrey Sambells (http://github.com/iamamused). For best results adjust your printer's margins."
 	}
 	
 	
