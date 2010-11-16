@@ -1,4 +1,4 @@
-all: safari chrome
+all: clean safari chrome
 
 safari:
 	cp source/common/* source/safari.safariextension/

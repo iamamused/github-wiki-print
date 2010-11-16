@@ -95,8 +95,8 @@
 		font-family: Georgia, "Times New Roman",  Times, serif;
 		font-size: 11pt;
 		line-height: 16pt;
-		margin: 72pt;
-		margin-right: 36pt;
+		padding: 72pt;
+		padding-left: 96pt;
 	}
 	
 	h1, h2, h3,
