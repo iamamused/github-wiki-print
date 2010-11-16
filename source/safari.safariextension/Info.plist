@@ -24,6 +24,11 @@
 		<array>
 			<string>print.css</string>
 		</array>
+		<key>Whitelist</key>
+		<array>
+			<string>https://github.com/*/*/wiki/*</string>
+			<string>http://github.com/*/*/wiki/*</string>
+		</array>
 	</dict>
 	<key>Description</key>
 	<string>Make Github Wikis Printable </string>
@@ -43,5 +48,7 @@
 			<string>Some</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://iamamused.github.com/github-cross-link/update/safari.plist</string>
 </dict>
 </plist>

@@ -1,4 +1,4 @@
-all: safari chrome firefox
+all: safari chrome
 
 safari:
 	cp source/common/* source/safari.safariextension/
